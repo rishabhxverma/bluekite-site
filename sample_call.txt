@@ -1,0 +1,30 @@
+Rishabh: Thanks for making time, Daniel and Priya. Is it okay if I record this so I can send you clear notes afterwards?
+Daniel: Sure, go ahead.
+Rishabh: Great. Before I say anything about what we do, can you walk me through how new clients find Northpeak Media today?
+Daniel: Most of it is inbound. We run LinkedIn and Google ads for our own agency and get about 120 form fills a month. Then referrals, maybe three or four a month.
+Rishabh: And what happens after someone fills in the form?
+Priya: It lands in a shared inbox. I check it between client work, so the first reply usually goes out four to six hours later. Sometimes the next day.
+Rishabh: How many of those 120 turn into a sales call?
+Daniel: About 20. We close maybe 3 of those. Our average client is a retainer around $4,000 a month and they stay about nine months.
+Rishabh: So each new client is worth roughly $36,000 to you. When a lead goes cold, do you know why?
+Daniel: When I've asked, they say they'd already booked with another agency by the time we called. That stings.
+Rishabh: What have you tried so far?
+Daniel: We priced an SDR at about $5,500 a month all in. And we tried a chatbot on the site, but it felt robotic and people ignored it.
+Rishabh: If every form fill got a personal reply within a minute, and you got a ping saying how qualified the lead is, what would that change?
+Daniel: If we went from 20 calls to 28 a month, that's real money. I'd love to stop losing the ones who are ready now.
+Priya: Can I push back a little? I like the speed, but I don't want anything going to a prospect that I haven't seen. Our brand is very personal.
+Daniel: I'd rather it just sends. If you have to approve every reply, we're back to waiting on you.
+Priya: Then at least for the first month. I want to see what it writes before it runs on its own.
+Rishabh: That's a fair split. We can start with you approving each reply from Slack, and switch to sending on its own once you trust it. We don't need to decide that today.
+Rishabh: Where do the leads live after the inbox?
+Priya: Supposedly HubSpot, but half of them never get entered. Honestly I'd rather move everything to HubSpot properly.
+Daniel: I'm not paying for a HubSpot upgrade this year. The free version is fine.
+Rishabh: Okay, so the CRM question is still open. I'll show both options in the proposal, one on free HubSpot and one with the upgrade.
+Rishabh: On timing and budget, what are you thinking?
+Daniel: I'd want this live before our January campaigns. Budget-wise I need to check with my business partner, Marcus. He signs off on anything over $2,000.
+Rishabh: Understood. What would help Marcus decide?
+Daniel: A one-page proposal with the numbers we talked about, and two or three options.
+Rishabh: I can send that by Friday. Priya, could you send me an export of last month's form fills, with names removed, so I can test replies on real messages?
+Priya: Yes, I'll send that by Wednesday.
+Daniel: And let's do a follow-up call next Tuesday at 10, with Marcus on it.
+Rishabh: Perfect. I'll send the invite today. Thanks both.
