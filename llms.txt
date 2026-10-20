@@ -10,23 +10,23 @@
 
 ## Services
 
-- Stop losing enquiries to slow replies: When someone calls, fills in a form or emails, they hear back within a minute, in a reply written to them. Your team gets a heads-up on how promising it looks, and any call they book lands in your calendar.
-- Cold email that reaches people: Outreach only works if your emails arrive. We set up your email so more of it lands in the inbox, not spam. Each message reads like a person wrote it, and interested replies reach you the same day.
-- Your inbox sorted, your replies drafted: AI assistants sort your inbox, draft replies in your voice and answer common questions from your own documents. They follow your rules, and anything important waits for a person to approve.
-- Your tools, finally talking to each other: Most teams retype the same details into five different apps. Your forms, inbox, CRM, calendar and invoicing get connected, so information goes in once and shows up everywhere.
-- Fresh lists of who to contact: Skip stale bought lists. Each morning you get businesses that fit your ideal client and the contacts they publish, each with a timely reason to reach out, like a new job posting.
-- Proposals and reports without the late nights: Your sales call notes become a polished proposal the same day. Your open deals and results land in one simple report, in Teams, email or your CRM.
+- Answer every new lead within a minute: Someone calls, fills out your form or sends an email. Within a minute they get a real reply, written to them, not a template. You get a quick note on how promising they look, and if they book a call, it's already in your calendar.
+- Cold email that actually lands: Cold email only works if it arrives. We set up your sending so more of it reaches the inbox instead of spam. Every message is written for the company it's going to, and when someone's interested, you hear about it that day.
+- An inbox that sorts itself: Your inbox gets sorted by what needs you, and replies are drafted for you to check. Common questions get answered from your own documents, and it sticks to the rules you set.
+- Apps that finally talk to each other: How many times does one client's name get typed in a week? For most teams, it's five apps and five times. We connect your forms, inbox, CRM, calendar and invoicing, so details go in once and show up everywhere they're needed.
+- Fresh leads every morning: Bought lists go stale fast. Instead, each morning you get businesses that fit your ideal client, the contact details they publish, and a good reason to get in touch right now, like a job they just posted.
+- Proposals out the same day: Your call notes turn into a proper proposal before the day's over. Open deals and results show up in one simple report, wherever you already look: Teams, email or your CRM.
 
 ## How it works
 
-- Day 1, A conversation about your week: Tell us where your week goes and which enquiries go cold. You leave knowing what's worth automating first, even if you never hire us.
-- Days 2 to 3, A plan you sign off on: One page in plain English: what gets automated, what stays with your people, the price, and the result you can hold us to.
-- Days 4 to 12, Built inside your tools: It runs in the accounts you already own. We test it on real enquiries and adjust it with your team before anything goes live.
-- Days 13 to 14, Live, watched and improved: For the first few weeks, we check every action and send you a short weekly note on the time saved and the clients it brought in.
+- Day 1, We look at how your week really works: Tell us where the hours go and which leads tend to go cold. You'll leave knowing what's worth automating first, even if you never work with us.
+- Days 2 to 3, You approve a one-page plan: One page, in plain English. What gets automated, what stays with your people, what it costs, and the date it goes live.
+- Days 4 to 12, We build it inside your tools: We build it in the tools your team already uses, then test it on real leads and fine-tune it with you before anything goes live.
+- Days 13 to 14, It goes live, and we stay close: For the first few weeks we check every action ourselves. Each week you get a short note on the time saved and the clients it brought in.
 
 ## Demos (replays of real runs)
 
-- [Stop losing enquiries](https://bluekitetech.ca/demos/speed): a new enquiry gets a personal reply in under a minute, and the owner gets a heads-up on how promising it looks.
+- [Stop losing leads](https://bluekitetech.ca/demos/speed): a new lead gets a personal reply in under a minute, and the owner gets a heads-up on how promising it looks.
 - [Fresh contact lists](https://bluekitetech.ca/demos/leads): pick a niche and a city and get real businesses, the contact details they publish and an opening line written for each.
 - [Companies hiring right now](https://bluekitetech.ca/demos/hiring): this week's job posts for the role you choose, the person to contact at each company and a short note ready to send.
 - [Monthly client report, written for you](https://bluekitetech.ca/demos/report): a client's Google Ads, Meta Ads and Google Analytics numbers become a plain-language monthly report, with every figure traced to the data and private notes for the account lead.
@@ -40,42 +40,26 @@
 
 ## FAQ
 
-### What is BlueKite?
+### How is BlueKite different from other AI agencies?
 
-BlueKite is an AI automation agency in Vancouver, BC. It takes repetitive work off marketing agencies and IT consultants in Canada and the US, like answering new enquiries, following up and writing proposals, while a person on your team approves anything important.
+We start with your workflow, not a tool. We look at how work actually moves through your team, automate only the parts worth automating, and leave the rest alone. You see working demos before you spend anything.
 
-### What can BlueKite automate for my business?
+### We tried AI tools before and they didn't stick. Why would this be different?
 
-Most of the repetitive work around winning and serving clients: answering new enquiries, booking calls and reminders, following up, moving details between your apps, building contact lists, writing proposals and pulling reports together. If something isn't worth automating yet, you'll hear that on the free call.
+Usually the tool was one more app someone had to remember to open. We build into the inbox, CRM and ticketing system your team already uses, and check every action ourselves for the first few weeks.
 
-### How long does it take to set up?
+### How long does it take?
 
-About 14 days from the day you approve your plan. It starts with a free 30-minute call, your written plan follows within a few days, and everything is built inside the tools you already use. If it isn't live in 14 days, you get every dollar back.
-
-### Will my clients know it's AI?
-
-Only if you want them to. Replies are written in your team's voice from how you already talk to clients, and anything sensitive waits for a person to approve before it goes out. Most people just notice that you got back to them quickly.
-
-### Is our data safe?
-
-Everything runs inside the accounts you already own. The AI only sees what a task needs, and your information is never used to train public models. Everything follows Canada's privacy law (PIPEDA) and anti-spam law (CASL). When data is especially sensitive, it can stay on a private AI that runs on your own systems.
-
-### Do we have to change how we work?
-
-No. It works inside Outlook, Teams, Gmail, Slack and the CRM you already use. There's no new app to learn, and your team gets a short walkthrough before anything goes live.
+About 14 days from when you approve your plan. It starts with a free 30-minute call, and your written plan arrives a few days later.
 
 ### How much does it cost?
 
-Each project is a fixed price, agreed in writing before any work starts, plus optional monthly care to keep it running and improving. Your free automation plan shows the exact price for your business, and if we miss the result, you get your money back.
+Each project has a fixed price, agreed in writing before we start, with optional monthly care after. If it isn't live within 14 days of approving your plan, you get a full refund.
 
-### What happens if it doesn't deliver?
+### Is our data safe?
 
-If your automation isn't live within 14 days of approving your plan, you get a full refund. Just ask, and the money is back with you.
-
-### What if something breaks?
-
-Every step is logged, so problems are easy to spot and fix. If an AI service ever goes down, the work goes to a person on your team, and they're told straight away.
+Yes. Your data stays in the systems you already pay for, and none of it trains public models. We follow Canada's privacy law (PIPEDA) and anti-spam law (CASL).
 
 ### Is cold email allowed?
 
-Yes, when it's done properly. We only contact businesses at addresses they publish themselves, keep every message relevant to the person's role, and include who's sending it and an easy way to opt out.
+Yes, done right. We only email addresses businesses publish themselves, keep every message relevant to the person's role, and always include who's sending it and how to opt out.
