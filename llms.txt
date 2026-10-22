@@ -11,6 +11,7 @@
 ## Services
 
 - Answer every new lead within a minute: Someone calls, fills out your form or sends an email. Within a minute they get a real reply, written to them, not a template. You get a quick note on how promising they look, and if they book a call, it's already in your calendar.
+- Ticket queues that sort themselves: Overnight alerts and new tickets turn into one short morning briefing. Every ticket gets a priority, the past fixes that match it and a draft reply. Nothing reaches a client until one of your techs says yes.
 - Cold email that actually lands: Cold email only works if it arrives. We set up your sending so more of it reaches the inbox instead of spam. Every message is written for the company it's going to, and when someone's interested, you hear about it that day.
 - An inbox that sorts itself: Your inbox gets sorted by what needs you, and replies are drafted for you to check. Common questions get answered from your own documents, and it sticks to the rules you set.
 - Apps that finally talk to each other: How many times does one client's name get typed in a week? For most teams, it's five apps and five times. We connect your forms, inbox, CRM, calendar and invoicing, so details go in once and show up everywhere they're needed.
@@ -22,7 +23,7 @@
 - Day 1, We look at how your week really works: Tell us where the hours go and which leads tend to go cold. You'll leave knowing what's worth automating first, even if you never work with us.
 - Days 2 to 3, You approve a one-page plan: One page, in plain English. What gets automated, what stays with your people, what it costs, and the date it goes live.
 - Days 4 to 12, We build it inside your tools: We build it in the tools your team already uses, then test it on real leads and fine-tune it with you before anything goes live.
-- Days 13 to 14, It goes live, and we stay close: For the first few weeks we check every action ourselves. Each week you get a short note on the time saved and the clients it brought in.
+- Days 13 to 14, It goes live, and we stay close: For the first few weeks we check every action ourselves. Each week you get a short note on the time saved, the work it handled and the clients it brought in.
 
 ## Demos (replays of real runs)
 

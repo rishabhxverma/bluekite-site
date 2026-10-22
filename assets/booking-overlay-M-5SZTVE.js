@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BX5dh3L7.js";import{a as t,i as n,o as r,r as i}from"./index-dsczFmOV.js";var a=e();function o({open:e,onClose:o}){return(0,a.jsxs)(`div`,{className:`lx-root`,"data-theme":`dark`,style:{"--lx-serif":t,"--lx-sans":n,display:`contents`},children:[(0,a.jsx)(`style`,{children:i}),(0,a.jsx)(r,{open:e,onClose:o})]})}export{o as default};
