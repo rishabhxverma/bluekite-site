@@ -10,11 +10,11 @@
 
 ## Services
 
-- Answer every new lead within a minute: Someone calls, fills out your form or sends an email. Within a minute they get a real reply, written to them, not a template. You get a quick note on how promising they look, and if they book a call, it's already in your calendar.
+- Answer every new lead within a minute: Someone calls, fills out your form or sends an email. Within a minute they get a reply written to what they asked. You get a quick note on how promising they look, and if they book a call, it's already in your calendar.
 - Ticket queues that sort themselves: Overnight alerts and new tickets turn into one short morning briefing. Every ticket gets a priority, the past fixes that match it and a draft reply. Nothing reaches a client until one of your techs says yes.
-- Cold email that actually lands: Cold email only works if it arrives. We set up your sending so more of it reaches the inbox instead of spam. Every message is written for the company it's going to, and when someone's interested, you hear about it that day.
+- Cold email that lands in the inbox: Cold email only works if it arrives. We set up your sending so more of it reaches the inbox instead of spam. Every message is written for the company it's going to, and when someone's interested, you hear about it that day.
 - An inbox that sorts itself: Your inbox gets sorted by what needs you, and replies are drafted for you to check. Common questions get answered from your own documents, and it sticks to the rules you set.
-- Apps that finally talk to each other: How many times does one client's name get typed in a week? For most teams, it's five apps and five times. We connect your forms, inbox, CRM, calendar and invoicing, so details go in once and show up everywhere they're needed.
+- Apps that finally talk to each other: Count the places one new client's name gets typed: the form, the inbox, the CRM, the calendar, the invoice. We connect your forms, inbox, CRM, calendar and invoicing, so details go in once and show up everywhere they're needed.
 - Fresh leads every morning: Bought lists go stale fast. Instead, each morning you get businesses that fit your ideal client, the contact details they publish, and a good reason to get in touch right now, like a job they just posted.
 - Proposals out the same day: Your call notes turn into a proper proposal before the day's over. Open deals and results show up in one simple report, wherever you already look: Teams, email or your CRM.
 
@@ -30,20 +30,20 @@
 - [Stop losing leads](https://bluekitetech.ca/demos/speed): a new lead gets a personal reply in under a minute, and the owner gets a heads-up on how promising it looks.
 - [Fresh contact lists](https://bluekitetech.ca/demos/leads): pick a niche and a city and get real businesses, the contact details they publish and an opening line written for each.
 - [Companies hiring right now](https://bluekitetech.ca/demos/hiring): this week's job posts for the role you choose, the person to contact at each company and a short note ready to send.
-- [Monthly client report, written for you](https://bluekitetech.ca/demos/report): a client's Google Ads, Meta Ads and Google Analytics numbers become a plain-language monthly report, with every figure traced to the data and private notes for the account lead.
+- [Monthly client report, written for you](https://bluekitetech.ca/demos/report): a client's Google Ads, Meta Ads and Analytics numbers become a plain-language monthly report, with every figure traced to the data.
 - [Morning ad watchdog](https://bluekitetech.ca/demos/watch): every client ad account is checked before 8am, and one message says which need you today, the likely cause and the next step.
-- [Ticket helper for IT teams](https://bluekitetech.ca/demos/tickets): a small MSP's morning queue gets priorities, deadlines, similar past fixes and draft replies, and 38 overnight alerts become a short briefing linked to the tickets they explain.
-- [Ask our docs](https://bluekitetech.ca/demos/docs): staff questions answered only from the company's own procedures, with every quote checked, an honest answer when it is not written down, and help articles drafted from solved tickets.
-- [Inbox triage, in your voice](https://bluekitetech.ca/demos/inbox): a founder's Monday inbox is sorted into what needs them today, what the team can handle, new business and noise, with replies drafted in their own tone and phishing set aside.
-- [Account health radar](https://bluekitetech.ca/demos/accounts): every client account scored for churn risk by clear rules, the ones to call this week explained, growth openings spotted, and the check-in email and review agenda drafted.
-- [New client onboarding](https://bluekitetech.ca/demos/onboarding): a won deal becomes a dated project plan, an access checklist, a welcome email, a research brief from the client's website, a kickoff agenda and one polite reminder.
-- [After the call](https://bluekitetech.ca/demos/proposal): one sales call becomes a follow-up email, tasks with owners, a CRM update, the points still to settle and a proposal, all waiting for your approval.
+- [Ticket helper for IT teams](https://bluekitetech.ca/demos/tickets): a small MSP's morning queue gets priorities, past fixes and draft replies, and 38 overnight alerts become one short briefing.
+- [Ask our docs](https://bluekitetech.ca/demos/docs): staff questions answered only from the company's own procedures, every quote checked, and an honest reply when it isn't written down.
+- [Inbox triage, in your voice](https://bluekitetech.ca/demos/inbox): a founder's Monday inbox sorted by what needs them today, with replies drafted in their tone and phishing set aside.
+- [Account health radar](https://bluekitetech.ca/demos/accounts): every client account scored for churn risk by clear rules, with the ones to call this week and a check-in email for each.
+- [New client onboarding](https://bluekitetech.ca/demos/onboarding): a won deal becomes a dated project plan, an access checklist, a welcome email and a kickoff agenda.
+- [After the call](https://bluekitetech.ca/demos/proposal): one sales call becomes a follow-up email, tasks, a CRM update and a proposal, all waiting for your approval.
 
 ## FAQ
 
 ### How is BlueKite different from other AI agencies?
 
-We start with your workflow, not a tool. We look at how work actually moves through your team, automate only the parts worth automating, and leave the rest alone. You see working demos before you spend anything.
+We start by looking at how work moves through your team. Then we automate only the steps worth automating and leave the rest alone. You see working demos before you spend anything.
 
 ### We tried AI tools before and they didn't stick. Why would this be different?
 
