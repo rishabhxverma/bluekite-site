@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>BlueKite - Vektor concept</title>
+<meta name="description" content="BlueKite builds automations inside your firm's own tools so retainers, engagement letters, quotes and billing get done on time, with a person approving anything a client sees.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Geist+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="kite" viewBox="2 -3 100 100"><polygon points="50,6 24,38 50,94" fill="#1E5EFF"/><polygon points="54,0 80,32 54,80" fill="#4DA3FF"/></symbol>
+    <symbol id="kitew" viewBox="2 -3 100 100"><polygon points="50,6 24,38 50,94" fill="#fff"/><polygon points="54,0 80,32 54,80" fill="#fff" fill-opacity=".62"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3 13h5l1.5 3h5L16 13h5"/><path d="M5.5 5h13L21 13v6H3v-6z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-sign" viewBox="0 0 24 24"><path d="M4 21h8"/><path d="M15.5 4.5l4 4L9 19H5v-4z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.5-3.5 3-5.5 6.5-5.5s6 2 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2 .7 3.2 2.6 3.5 5.5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c.6-4 3.8-6.5 8-6.5s7.4 2.5 8 6.5"/></symbol>
+    <symbol id="i-userc" viewBox="0 0 24 24"><circle cx="10" cy="8" r="4"/><path d="M3 21c.6-4 3.4-6.5 7-6.5 1.6 0 3 .4 4.2 1.2"/><path d="m15 19 2 2 4-4.5"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 12.5 9 5 9-5M3 16.5l9 5 9-5"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arr" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-arl" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3 3 10.5l7.5 3L13.5 21z"/><path d="m21 3-10.5 10.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3 4h14v10H8l-5 4z"/><path d="M7 8h6M7 11h4"/><path d="M19 8h2v11l-3-2.5h-8V15"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/><path d="m6 16 4-5 3 3 5-6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></symbol>
+    <symbol id="i-pulse" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8M12 17v4M6 11h3l2-3 2 6 2-3h3"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/><circle cx="12" cy="12" r="1.2"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V4h4M16 4h4v4M20 16v4h-4M8 20H4v-4"/><path d="M4 12h16"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v17M7 21h10M5 7h14"/><path d="m5 7-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18"/><path d="M8 7h8M8 11h2M14 11h2M8 15h2M14 15h2M8 18h2M14 18h2"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7"/><rect x="3" y="13" width="18" height="7"/><path d="M7 7.5h2M7 16.5h2"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h12a3 3 0 0 1 3 3v14H7a3 3 0 0 1-3-3z"/><path d="M4 18a3 3 0 0 1 3-3h12M8 8h6"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></symbol>
+    <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16"/><path d="M3 9h18M3 14h18M9 9v11"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/><path d="M19 15.5c.2 1.6.9 2.3 2.5 2.5-1.6.2-2.3.9-2.5 2.5-.2-1.6-.9-2.3-2.5-2.5 1.6-.2 2.3-.9 2.5-2.5z"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3z"/></symbol>
+    <symbol id="i-gridp" viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><path d="M17 14v6M14 17h6"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7"/><rect x="13" y="4" width="7" height="7"/><rect x="4" y="13" width="7" height="7"/><rect x="13" y="13" width="7" height="7"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 7h18v3a2 2 0 0 0 0 4v3H3v-3a2 2 0 0 0 0-4z"/><path d="M14 7v10"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 17a8 8 0 1 1 16 0"/><path d="m12 17 4-5"/></symbol>
+    <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13"/><path d="M8 7V4h8v3M3 12h18M11 12v2h2v-2"/></symbol>
+    <symbol id="i-hub" viewBox="0 0 24 24"><rect x="9" y="9" width="6" height="6"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/><rect x="3" y="3" width="3" height="3"/><rect x="18" y="18" width="3" height="3"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><rect x="3" y="4" width="5" height="5"/><rect x="16" y="15" width="5" height="5"/><path d="M8 6.5h7a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h7"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3M14.5 8.5l2 2"/></symbol>
+    <symbol id="i-dollar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v12M15 9c-.5-1-1.5-1.5-3-1.5-1.8 0-3 .8-3 2.1 0 3 6 1.6 6 4.6 0 1.3-1.2 2.3-3 2.3-1.6 0-2.7-.6-3.2-1.6"/></symbol>
+    <symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M6 3h12M6 21h12M7 3c0 5 10 5 10 9s-10 4-10 9M17 3c0 5-10 5-10 9s10 4 10 9"/></symbol>
+  </defs>
+</svg>
+
+<div class="loader" id="loader"><div class="lk"><svg viewBox="2 -3 100 100"><use href="#kite"/></svg><span>LOADING...</span></div></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="in">
+    <div class="left">
+      <a href="#top" class="logo" aria-label="BlueKite home"><span class="mk"><svg viewBox="2 -3 100 100"><use href="#kite"/></svg></span>BlueKite</a>
+      <div class="crumb">/ <b id="crumb">01 Intro</b></div>
+    </div>
+    <nav class="links" aria-label="Sections">
+      <a href="#solutions" data-s="solutions"><sup>01</sup><span>Solutions</span></a>
+      <a href="#process" data-s="process"><sup>02</sup><span>Process</span></a>
+      <a href="#examples" data-s="examples"><sup>03</sup><span>Examples</span></a>
+      <a href="#plans" data-s="plans"><sup>04</sup><span>Plans</span></a>
+      <a href="#faq" data-s="faq"><sup>05</sup><span>FAQ</span></a>
+    </nav>
+    <div class="right">
+      <div class="clock"><i></i><span id="clock">09:00:00</span> PT</div>
+      <a href="/book" class="btn dark sm"><span class="roll"><span><span>Book a call</span><span>Book a call</span></span></span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i></button>
+    </div>
+    <div class="prog" id="prog"></div>
+  </div>
+</header>
+<div class="mmenu" id="mmenu">
+  <a class="l" href="#solutions">Solutions <sup>01</sup></a>
+  <a class="l" href="#process">Process <sup>02</sup></a>
+  <a class="l" href="#examples">Examples <sup>03</sup></a>
+  <a class="l" href="#plans">Plans <sup>04</sup></a>
+  <a class="l" href="#faq">FAQ <sup>05</sup></a>
+  <a href="/book" class="btn dark">Book a free call</a>
+</div>
+
+<main id="top">
+<!-- 01 HERO -->
+<section class="sec hero" id="intro" data-label="01 Intro">
+  <div class="wrap top">
+    <div class="sh">
+      <div class="tag"><b>01</b><span>Follow-up automation</span></div>
+      <div class="meta">Automation studio · Vancouver, BC</div>
+    </div>
+    <div class="hrow">
+      <h1 class="h1 wb">Follow-ups that<br>never go quiet<span class="cur" aria-hidden="true"></span></h1>
+      <div class="r rv">
+        <p>We build automations inside your Outlook, Clio, QuickBooks or PSA that chase retainers, letters and quotes. A person approves anything a client sees.</p>
+        <div class="btns">
+          <a href="/book" class="btn dark"><span class="roll"><span><span>Book a free call</span><span>Book a free call</span></span></span></a>
+          <a href="#examples" class="btn light"><span class="roll"><span><span>See it work</span><span>See it work</span></span></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pipe rv" id="pipe">
+      <div class="ph">
+        <div class="l"><i></i>Live - firm pipeline (example)</div>
+        <div class="c">3 firm types · your own tools · person approves</div>
+        <div class="rr" id="xy">X 0000 · Y 0000</div>
+      </div>
+      <div class="pbody" id="pbody">
+        <svg class="lines" id="plines"></svg>
+        <div class="colh" style="left:24px">Inputs · from your inbox</div>
+        <div class="colh" style="left:50%;transform:translateX(-50%)">Agent</div>
+        <div class="colh" style="right:24px">Outputs · waiting for approval</div>
+        <div class="pnode in" data-i="0"><b class="slb">Email</b><span class="ib"><svg class="ico"><use href="#i-mail"/></svg></span><span class="t">New inquiry<small>In <em>0003</em></small></span><i class="dot"></i></div>
+        <div class="pnode in" data-i="1"><b class="slb">Retainer</b><span class="ib"><svg class="ico"><use href="#i-sign"/></svg></span><span class="t">Unsigned retainer<small>In <em>0002</em></small></span><i class="dot"></i></div>
+        <div class="pnode in" data-i="2"><b class="slb">T4</b><span class="ib"><svg class="ico"><use href="#i-doc"/></svg></span><span class="t">Missing T4<small>In <em>0005</em></small></span><i class="dot"></i></div>
+        <div class="pnode in" data-i="3"><b class="slb">Letter</b><span class="ib"><svg class="ico"><use href="#i-receipt"/></svg></span><span class="t">Unsigned letter<small>In <em>0001</em></small></span><i class="dot"></i></div>
+        <div class="pnode in" data-i="4"><b class="slb">Seats</b><span class="ib"><svg class="ico"><use href="#i-server"/></svg></span><span class="t">Vendor seat count<small>In <em>0004</em></small></span><i class="dot"></i></div>
+        <div class="pnode out" data-o="0"><b class="slb">Outlook</b><span class="ib"><svg class="ico"><use href="#i-mail"/></svg></span><span class="t">Reply drafted<small>Outlook · out <em>0003</em></small></span><i class="dot"></i><span class="bar"><i></i></span></div>
+        <div class="pnode out" data-o="1"><b class="slb">Clio</b><span class="ib"><svg class="ico"><use href="#i-scale"/></svg></span><span class="t">Follow-up queued<small>Clio · out <em>0002</em></small></span><i class="dot"></i><span class="bar"><i></i></span></div>
+        <div class="pnode out" data-o="2"><b class="slb">TaxDome</b><span class="ib"><svg class="ico"><use href="#i-folder"/></svg></span><span class="t">Chaser ready<small>TaxDome · out <em>0004</em></small></span><i class="dot"></i><span class="bar"><i></i></span></div>
+        <div class="pnode out" data-o="3"><b class="slb">HaloPSA</b><span class="ib"><svg class="ico"><use href="#i-flag"/></svg></span><span class="t">Mismatch flagged<small>HaloPSA · out <em>0001</em></small></span><i class="dot"></i><span class="bar"><i></i></span></div>
+        <div class="agent" id="agent">
+          <svg viewBox="0 0 360 360">
+            <g class="spin" style="transform-origin:180px 180px"><circle cx="180" cy="180" r="172" fill="none" stroke="#c9d3ff" stroke-width="5" stroke-dasharray="1.2 7.8"/></g>
+            <circle cx="180" cy="180" r="128" fill="none" stroke="rgba(17,17,17,.12)"/>
+            <circle cx="180" cy="180" r="150" fill="none" stroke="rgba(30,77,255,.25)" stroke-dasharray="2 6"/>
+          </svg>
+          <div class="lab" id="alab">Agent 01 · Read</div>
+          <div class="br"><b></b><b></b><b></b><b></b></div>
+          <div class="core" id="core"></div>
+          <div class="steps" id="asteps"><span class="on">Read</span><span>Match</span><span>Draft</span><span>Approve</span></div>
+          <div class="lat" id="alat">Waiting · 1 approval</div>
+        </div>
+      </div>
+      <div class="pruler" id="ruler"></div>
+      <div class="pfoot"><span class="log" id="plog">09:14:02 - Retainer follow-up drafted · waiting for approval → Outlook</span><span class="rr">Drafts waiting today<b id="pcount">4</b></span></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat rv"><div class="n"><span data-count="14">14</span><small>days</small></div><div class="l"><svg class="ico"><use href="#i-bolt"/></svg>To live, or refunded</div></div>
+      <div class="stat rv"><div class="n"><span data-count="30">30</span><small>min</small></div><div class="l"><svg class="ico"><use href="#i-clock"/></svg>Free first call</div></div>
+      <div class="stat rv"><div class="n"><span data-count="3">3</span><small>fixes</small></div><div class="l"><svg class="ico"><use href="#i-layers"/></svg>In your written plan</div></div>
+      <div class="stat rv"><div class="n"><span data-count="0">0</span><small>accounts</small></div><div class="l"><svg class="ico"><use href="#i-users"/></svg>That you don’t own</div></div>
+    </div>
+    <div class="tools rv">
+      <div class="lbl">Works inside the<br>tools you already use</div>
+      <div class="marq"><div class="tr" id="marq">
+        <span class="wm b">Clio</span><span class="wm">QuickBooks Online</span><span class="wm m">Xero</span><span class="wm b">TaxDome</span><span class="wm l">Karbon</span><span class="wm">Microsoft 365</span><span class="wm b">Outlook</span><span class="wm l">Gmail</span><span class="wm m">ConnectWise</span><span class="wm b">HaloPSA</span><span class="wm">DocuSign</span>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 SOLUTIONS -->
+<section class="sec solutions" id="solutions" data-label="02 Solutions">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>02</b><span>Solutions</span></div><div class="meta">4 core fixes · auto-play</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">What we automate</h2>
+      <p class="rv">The follow-up work that makes your firm money, done on time. Drafted by AI, approved by a person before any client sees it.</p>
+    </div>
+    <div class="acc" id="acc">
+      <div class="ac open" data-k="0">
+        <div class="cl"><div class="num">(01)</div><div class="ib"><svg class="ico"><use href="#i-scale"/></svg></div><div class="vt">Consult &amp; retainer follow-up</div></div>
+        <div class="op">
+          <div class="tp"><span class="chipd"><svg class="ico"><use href="#i-scale"/></svg>Workflow 01</span><span class="chipd"><i></i>Law firms</span></div>
+          <h3>Consult &amp; retainer follow-up</h3>
+          <p class="d">Every consult that didn’t sign gets a polite follow-up. Every unsigned retainer agreement is tracked and chased. A lawyer approves each one.</p>
+          <div class="flow"><div class="fn"><span class="b"><svg class="ico"><use href="#i-chat"/></svg></span><span>New consult</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-spark"/></svg></span><span>Draft follow-up</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-userc"/></svg></span><span>Lawyer approves</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-sign"/></svg></span><span>Retainer signed</span></div></div>
+          <div class="mets"><div><div class="v">&lt;1 min</div><div class="k">Reply to new inquiries</div></div><div><div class="v">0</div><div class="k">Consults left without a follow-up</div></div><div><div class="v">1</div><div class="k">Lawyer approves each send</div></div></div>
+          <div class="bt"><div class="chips"><span>CLIO</span><span>OUTLOOK</span><span>DOCUSIGN</span></div><a href="#examples">See the example <svg class="ico"><use href="#i-arr"/></svg></a></div>
+        </div>
+        <i class="pbar"></i>
+      </div>
+      <div class="ac" data-k="1">
+        <div class="cl"><div class="num">(02)</div><div class="ib"><svg class="ico"><use href="#i-calc"/></svg></div><div class="vt">Engagement letters &amp; chasing</div></div>
+        <div class="op">
+          <div class="tp"><span class="chipd"><svg class="ico"><use href="#i-calc"/></svg>Workflow 02</span><span class="chipd"><i></i>Tax &amp; CPA firms</span></div>
+          <h3>Engagement letters &amp; chasing</h3>
+          <p class="d">Each letter carries the partner’s new fee and goes out for e-signature with a deposit request. Unsigned letters and missing T4s get chased for you.</p>
+          <div class="flow"><div class="fn"><span class="b"><svg class="ico"><use href="#i-calc"/></svg></span><span>New fee set</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-sign"/></svg></span><span>Letter sent</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-mail"/></svg></span><span>Chase T4s</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-check"/></svg></span><span>Signed + filed</span></div></div>
+          <div class="mets"><div><div class="v">Daily</div><div class="k">"Waiting on" list each morning</div></div><div><div class="v">0</div><div class="k">Letters sent without your OK</div></div><div><div class="v">1 click</div><div class="k">To approve a batch of chasers</div></div></div>
+          <div class="bt"><div class="chips"><span>TAXDOME</span><span>KARBON</span><span>DOCUSIGN</span></div><a href="#examples">See the example <svg class="ico"><use href="#i-arr"/></svg></a></div>
+        </div>
+        <i class="pbar"></i>
+      </div>
+      <div class="ac" data-k="2">
+        <div class="cl"><div class="num">(03)</div><div class="ib"><svg class="ico"><use href="#i-server"/></svg></div><div class="vt">Monthly billing reconciliation</div></div>
+        <div class="op">
+          <div class="tp"><span class="chipd"><svg class="ico"><use href="#i-server"/></svg>Workflow 03</span><span class="chipd"><i></i>MSPs &amp; IT</span></div>
+          <h3>Monthly billing reconciliation</h3>
+          <p class="d">Licence and seat counts from your vendors, checked against what each agreement bills. Mismatches listed for your approval before the invoice run.</p>
+          <div class="flow"><div class="fn"><span class="b"><svg class="ico"><use href="#i-server"/></svg></span><span>Vendor counts</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-table"/></svg></span><span>Match agreements</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-flag"/></svg></span><span>Flag mismatch</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-check"/></svg></span><span>Approve invoice</span></div></div>
+          <div class="mets"><div><div class="v">Monthly</div><div class="k">Check before every invoice run</div></div><div><div class="v">Per seat</div><div class="k">Matched, client by client</div></div><div><div class="v">0</div><div class="k">Invoice changes without your OK</div></div></div>
+          <div class="bt"><div class="chips"><span>CONNECTWISE</span><span>HALOPSA</span><span>AUTOTASK</span></div><a href="#examples">See the example <svg class="ico"><use href="#i-arr"/></svg></a></div>
+        </div>
+        <i class="pbar"></i>
+      </div>
+      <div class="ac" data-k="3">
+        <div class="cl"><div class="num">(04)</div><div class="ib"><svg class="ico"><use href="#i-inbox"/></svg></div><div class="vt">Quotes, proposals &amp; inquiries</div></div>
+        <div class="op">
+          <div class="tp"><span class="chipd"><svg class="ico"><use href="#i-inbox"/></svg>Workflow 04</span><span class="chipd"><i></i>All firms</span></div>
+          <h3>Quotes, proposals &amp; inquiries</h3>
+          <p class="d">New inquiries get a reply within a minute. Quotes and proposals get a polite nudge until they are signed or closed. You approve the wording.</p>
+          <div class="flow"><div class="fn"><span class="b"><svg class="ico"><use href="#i-inbox"/></svg></span><span>New inquiry</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-bolt"/></svg></span><span>Fast reply</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-doc"/></svg></span><span>Quote sent</span></div><div class="fn"><span class="b"><svg class="ico"><use href="#i-refresh"/></svg></span><span>Nudge to sign</span></div></div>
+          <div class="mets"><div><div class="v">&lt;1 min</div><div class="k">First reply to an inquiry</div></div><div><div class="v">0</div><div class="k">Quotes left to go quiet</div></div><div><div class="v">1</div><div class="k">Person approves the wording</div></div></div>
+          <div class="bt"><div class="chips"><span>OUTLOOK</span><span>GMAIL</span><span>DOCUSIGN</span></div><a href="#examples">See the example <svg class="ico"><use href="#i-arr"/></svg></a></div>
+        </div>
+        <i class="pbar"></i>
+      </div>
+    </div>
+    <div class="ctastrip rv">
+      <p>Not sure what to fix first?<span>We’ll map it with you on a free 30-minute call.</span></p>
+      <a href="/book" class="btn dark"><span class="roll"><span><span>Book a free call</span><span>Book a free call</span></span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 03 PROCESS -->
+<section class="sec process" id="process" data-label="03 Process">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>03</b><span>Process</span></div><div class="meta">14 days · 4 stages</div></div>
+    <div class="rule"></div>
+    <div class="pgrid">
+      <div class="pleft">
+        <h2 class="h2 wb">From first call to live</h2>
+        <p class="rv">A clear path from a free call to working automations.<br>Live within 14 days of approving the plan, or refunded.</p>
+        <div class="bign"><div class="n" id="bign"><div class="strip"><span>01</span><span>02</span><span>03</span><span>04</span></div></div><div class="s" id="bigs">/04 · Call</div></div>
+        <div class="segs" id="segs"><i class="on"></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="pr" id="pr">
+        <article class="pc on" data-n="01" data-s="Call">
+          <div class="tp"><span class="ib"><svg class="ico"><use href="#i-phone"/></svg></span><span class="no"><em>.</em>01</span><span class="wk"><i></i>Day 1</span></div>
+          <h3>Free 30-minute call</h3>
+          <p>We learn how work moves through your firm and where it stalls: consults, letters, quotes, billing. No prep needed.</p>
+          <div class="dl"><div class="k">Deliverables</div><div class="cs"><span>Your workflow</span><span>Where it stalls</span><span>Next steps</span></div></div>
+        </article>
+        <article class="pc" data-n="02" data-s="Plan">
+          <div class="tp"><span class="ib"><svg class="ico"><use href="#i-doc"/></svg></span><span class="no"><em>.</em>02</span><span class="wk"><i></i>Within days</span></div>
+          <h3>A written plan, three fixes</h3>
+          <p>You get a short written plan with three fixes. Each one has a fixed price, agreed in writing before any work starts.</p>
+          <div class="dl"><div class="k">Deliverables</div><div class="cs"><span>3 fixes</span><span>Fixed price each</span><span>What a person approves</span></div></div>
+        </article>
+        <article class="pc" data-n="03" data-s="Build">
+          <div class="tp"><span class="ib"><svg class="ico"><use href="#i-hub"/></svg></span><span class="no"><em>.</em>03</span><span class="wk"><i></i>Days 1-14</span></div>
+          <h3>Build inside your tools</h3>
+          <p>We build in your Outlook, Clio, QuickBooks or PSA and test on real past work. Live within 14 days of approving the plan, or the fee is refunded.</p>
+          <div class="dl"><div class="k">Deliverables</div><div class="cs"><span>Live automations</span><span>Your accounts</span><span>Test run</span></div></div>
+        </article>
+        <article class="pc" data-n="04" data-s="Live">
+          <div class="tp"><span class="ib"><svg class="ico"><use href="#i-refresh"/></svg></span><span class="no"><em>.</em>04</span><span class="wk"><i></i>Day 14+</span></div>
+          <h3>Live, then optional care</h3>
+          <p>You own every account and everything built. It keeps running if you stop working with us. Monthly care is there if you want it.</p>
+          <div class="dl"><div class="k">Deliverables</div><div class="cs"><span>Handover notes</span><span>Approval queue</span><span>Optional care</span></div></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 IMPACT -->
+<section class="sec impact" id="estimate" data-label="04 Estimate">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>04</b><span>Impact</span></div><div class="meta">Interactive estimate</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">What does chasing cost you?</h2>
+      <p class="rv">Move the sliders. Your own numbers, so you can see the hours your team spends chasing clients by hand.</p>
+    </div>
+    <div class="calc">
+      <div class="cl-d rv">
+        <div class="hd"><span class="t"><svg class="ico"><use href="#i-gauge"/></svg>Chasing calculator</span><span class="v">EST.</span></div>
+        <div class="sl"><div class="row"><span class="k"><svg class="ico"><use href="#i-users"/></svg>Team size</span><span class="val" id="v-team">8</span></div>
+          <div class="rng"><input type="range" min="2" max="30" value="8" id="r-team" aria-label="Team size"><span class="tk"></span><span class="fl"></span><span class="th"></span><span class="ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></div>
+        <div class="sl"><div class="row"><span class="k"><svg class="ico"><use href="#i-clock"/></svg>Hours chasing / person / week</span><span class="val" id="v-hrs">5h</span></div>
+          <div class="rng"><input type="range" min="1" max="15" value="5" id="r-hrs" aria-label="Hours chasing per person per week"><span class="tk"></span><span class="fl"></span><span class="th"></span><span class="ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></div>
+        <div class="sl"><div class="row"><span class="k"><svg class="ico"><use href="#i-cal"/></svg>Working weeks / year</span><span class="val" id="v-wks">46</span></div>
+          <div class="rng"><input type="range" min="40" max="50" value="46" id="r-wks" aria-label="Working weeks per year"><span class="tk"></span><span class="fl"></span><span class="th"></span><span class="ticks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div></div>
+        <div class="wf"><div class="k">Work you chase by hand</div>
+          <div class="cs" id="wf">
+            <button class="on" data-w=".3"><svg class="ico"><use href="#i-sign"/></svg>Retainers &amp; letters</button>
+            <button class="on" data-w=".25"><svg class="ico"><use href="#i-doc"/></svg>Documents</button>
+            <button class="on" data-w=".2"><svg class="ico"><use href="#i-receipt"/></svg>Billing</button>
+            <button data-w=".15"><svg class="ico"><use href="#i-inbox"/></svg>Quotes</button>
+            <button data-w=".1"><svg class="ico"><use href="#i-chat"/></svg>Status updates</button>
+          </div>
+        </div>
+        <div class="fn">Estimate only · your numbers, not a promise</div>
+      </div>
+      <div class="cl-w rv">
+        <div class="tp"><div><div class="k">Hours spent chasing, per year</div><div class="big"><span id="o-hrs">1,380</span><small>h</small></div><div class="per">/ year · in the work you picked</div></div><span class="ib"><svg class="ico"><use href="#i-hourglass"/></svg></span></div>
+        <div class="four">
+          <div><div class="k">Working days</div><div class="v" id="o-days">184</div></div>
+          <div><div class="k">FTE equivalent</div><div class="v" id="o-fte">0.8</div></div>
+          <div><div class="k">Per person / week</div><div class="v" id="o-pp">3.8h</div></div>
+          <div><div class="k">Share picked</div><div class="v" id="o-sh">75%</div></div>
+        </div>
+        <div class="sq" id="sq"></div>
+        <div class="sqk"><span><i></i>1 square = 1 working day · 260 = one full-time year</span><span><i></i>Spent chasing</span></div>
+        <a href="/book" class="btn dark"><span class="roll"><span><span>Get your written plan <svg class="ico sm"><use href="#i-arr"/></svg></span><span>Get your written plan <svg class="ico sm"><use href="#i-arr"/></svg></span></span></span></a>
+      </div>
+    </div>
+    <div class="dials">
+      <div class="dial rv" data-p=".86"><div class="rg"><svg viewBox="0 0 128 128"><g class="tks"></g><circle cx="64" cy="64" r="44" fill="none" stroke="#eee" stroke-width="2"/><circle class="arc" cx="64" cy="64" r="44" fill="none" stroke="#1e4dff" stroke-width="2" stroke-dasharray="276.5" stroke-dashoffset="276.5" transform="rotate(-90 64 64)"/></svg><div class="c">&lt;1<small>min</small></div></div><div><div class="k"><svg class="ico"><use href="#i-bolt"/></svg>Inquiry reply</div><p>New inquiries answered in about a minute</p></div></div>
+      <div class="dial rv" data-p="1"><div class="rg"><svg viewBox="0 0 128 128"><g class="tks"></g><circle cx="64" cy="64" r="44" fill="none" stroke="#eee" stroke-width="2"/><circle class="arc" cx="64" cy="64" r="44" fill="none" stroke="#1e4dff" stroke-width="2" stroke-dasharray="276.5" stroke-dashoffset="276.5" transform="rotate(-90 64 64)"/></svg><div class="c">1<small>person</small></div></div><div><div class="k"><svg class="ico"><use href="#i-userc"/></svg>Approval</div><p>Approves anything a client sees</p></div></div>
+      <div class="dial rv" data-p=".62"><div class="rg"><svg viewBox="0 0 128 128"><g class="tks"></g><circle cx="64" cy="64" r="44" fill="none" stroke="#eee" stroke-width="2"/><circle class="arc" cx="64" cy="64" r="44" fill="none" stroke="#1e4dff" stroke-width="2" stroke-dasharray="276.5" stroke-dashoffset="276.5" transform="rotate(-90 64 64)"/></svg><div class="c">0<small>data</small></div></div><div><div class="k"><svg class="ico"><use href="#i-lock"/></svg>Public training</div><p>Client data used to train public models</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 EXAMPLES / CASES -->
+<section class="sec dark cases" id="examples" data-label="05 Examples">
+  <canvas class="rain" data-rain></canvas>
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>05</b><span>Examples</span></div><div class="meta" style="color:#8a8a8a">Sample firms · auto-cycling</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">What a fix looks like</h2>
+      <p class="rv">Open an example case: the problem, the build and the number it ends on. Sample firms, made-up figures.</p>
+    </div>
+    <div class="cgrid">
+      <div class="clist rv" id="clist">
+        <div class="ci on" data-c="0"><span class="no">01</span><div><div class="nm">Harbour Family Law</div><div class="mt">Law · example</div></div><span class="v">3</span><i class="ln"></i></div>
+        <div class="ci" data-c="1"><span class="no">02</span><div><div class="nm">Northshore CPA</div><div class="mt">Tax &amp; CPA · example</div></div><span class="v">41/52</span><i class="ln"></i></div>
+        <div class="ci" data-c="2"><span class="no">03</span><div><div class="nm">Cedar IT</div><div class="mt">MSP · example</div></div><span class="v">$1,840</span><i class="ln"></i></div>
+        <div class="ci" data-c="3"><span class="no">04</span><div><div class="nm">Lionsgate Books</div><div class="mt">Bookkeeping · example</div></div><span class="v">5/8</span><i class="ln"></i></div>
+        <div class="ft"><i></i>Auto-cycling · click a case to open</div>
+      </div>
+      <div class="cfile rv" id="cfile">
+        <div class="hd"><span class="l"><i></i><span id="cf-h">Case file 01 · Harbour Family Law</span></span><span class="r" id="cf-m">Sample firm · law · example</span></div>
+        <div class="mid">
+          <div class="vf"><i class="cn a"></i><i class="cn b"></i><i class="cn c"></i><i class="cn d"></i>
+            <span class="lb a"><i></i>Rec</span><span class="lb b" id="cf-f">File H-0114</span><span class="lb c" id="cf-t">00:00:00:00</span><span class="lb d">Example · sample data</span>
+            <div class="scr" id="cf-scr"></div>
+          </div>
+          <div class="hr">
+            <div class="k">Headline result</div>
+            <div class="bg" id="cf-big">3<small>retainers</small></div>
+            <div class="u" id="cf-u">Signed this month that had gone quiet</div>
+            <div class="q" id="cf-q"></div>
+            <div class="qm" id="cf-qm"></div>
+          </div>
+        </div>
+        <div class="c3">
+          <div><div class="k"><b><svg class="ico"><use href="#i-x"/></svg></b>Challenge</div><p id="cf-c"></p></div>
+          <div><div class="k"><b><svg class="ico"><use href="#i-hub"/></svg></b>What we built</div><p id="cf-b"></p></div>
+          <div><div class="k"><b><svg class="ico"><use href="#i-check"/></svg></b>Outcome</div><p id="cf-o"></p></div>
+        </div>
+        <div class="cbot">
+          <div><div class="k">Before → after</div><div class="ba" id="cf-ba"></div></div>
+          <div><div class="k">Rollout · 14 days</div>
+            <div class="ro"><div class="ph"><span>Call</span><span>Plan</span><span>Build</span><span>Live</span></div>
+              <div class="tl"><i class="fl" id="cf-ro"></i><b style="left:0%"></b><b style="left:15%"></b><b style="left:40%"></b><b style="left:100%"></b></div>
+              <div class="ds"><span>D1</span><span>D2</span><span>D4</span><span>D6</span><span>D8</span><span>D10</span><span>D12</span><span>D14</span></div>
+            </div>
+            <div class="stk" id="cf-s">Stack</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 INDUSTRIES -->
+<section class="sec ind" id="firms" data-label="06 Firms">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>06</b><span>Firms</span></div><div class="meta">4 firm types · scroll to explore</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">Playbooks for your firm</h2>
+      <p class="rv">The same fixes, shaped around the words your team and your clients actually use.</p>
+    </div>
+  </div>
+  <div class="hs" id="hs">
+    <div class="stick">
+      <div class="htrack" id="htrack">
+        <div class="pair">
+          <div class="fig lt"><span class="fn">(01)</span><i class="co"></i>
+            <svg class="art" viewBox="0 0 449 620" fill="none" stroke="#111" stroke-width="1">
+              <rect x="150" y="196" width="150" height="200" stroke="#bbb"/><rect x="138" y="208" width="150" height="200" stroke="#999" fill="#f2f2f2"/>
+              <rect x="124" y="222" width="150" height="200" fill="#fff"/>
+              <path d="M142 246h50" stroke-width="2"/><path d="M142 266h110M142 282h96M142 298h110" stroke="#bbb"/>
+              <rect x="125" y="314" width="148" height="20" fill="rgba(30,77,255,.08)" stroke="none"/>
+              <path d="M142 324h70" stroke="#1e4dff" stroke-width="2"/><rect x="132" y="320" width="4" height="8" fill="#1e4dff" stroke="none"/>
+              <path d="M142 350h104M142 366h80M142 382h100M142 398h60" stroke="#bbb"/>
+              <path d="M274 324h40" stroke="#999" stroke-dasharray="2 3"/><text x="318" y="328" font-family="Geist Mono,monospace" font-size="10" fill="#777" stroke="none">RETAINER · UNSIGNED</text>
+              <circle cx="272" cy="418" r="24" fill="#fff" stroke="#1e4dff" stroke-width="1.5"/><path d="m261 418 8 8 14-15" stroke="#1e4dff" stroke-width="1.8"/>
+              <text x="124" y="452" font-family="Geist Mono,monospace" font-size="10" fill="#999" stroke="none">FOLLOW-UP 2 OF 3 · APPROVED</text>
+            </svg>
+            <span class="cap">Fig. 01 - Retainer trail</span></div>
+          <div class="icard">
+            <div class="tp"><span class="ib"><svg class="ico"><use href="#i-scale"/></svg></span><span>Firm type 01 / 04</span></div>
+            <h3>Law firms</h3>
+            <p class="d">Family, immigration, estates and real estate. Every consult and retainer gets followed up.</p>
+            <ul><li><svg class="ico"><use href="#i-check"/></svg>Consult and retainer follow-up</li><li><svg class="ico"><use href="#i-check"/></svg>Reply to new inquiries in a minute</li><li><svg class="ico"><use href="#i-check"/></svg>Time entries drafted from sent mail</li><li><svg class="ico"><use href="#i-check"/></svg>Trust top-ups and overdue accounts</li></ul>
+            <div class="sb"><div><div class="v">3</div><div class="k">Retainers back from quiet<br>Example figure</div></div><svg viewBox="0 0 135 44" fill="none"><path d="M2 40h18l14-6 18 2 16-10 20-4 20-14 18-4" stroke="#1e4dff" stroke-width="1.5"/><rect x="123" y="1" width="6" height="6" fill="#1e4dff"/></svg></div>
+          </div>
+        </div>
+        <div class="pair">
+          <div class="fig bl"><span class="fn">(02)</span><i class="co"></i>
+            <svg class="art" viewBox="0 0 449 620" fill="none" stroke="#fff">
+              <g font-family="Geist Mono,monospace" font-size="9" fill="rgba(255,255,255,.75)" stroke="none"><text x="92" y="202">JAN</text><text x="152" y="202">FEB</text><text x="212" y="202">MAR</text><text x="272" y="202">APR</text><text x="332" y="202">MAY</text></g>
+              <path d="M98 214v190M158 214v190M218 214v190M278 214v190M338 214v190" stroke="rgba(255,255,255,.18)" stroke-dasharray="2 3"/>
+              <path d="M80 236h290M80 270h290M80 304h290M80 338h290M80 372h290" stroke="rgba(255,255,255,.14)"/>
+              <rect x="90" y="228" width="80" height="12" fill="rgba(255,255,255,.18)"/><text x="174" y="238" font-family="Geist Mono,monospace" font-size="8" fill="#fff" stroke="none">LETTERS</text>
+              <rect x="140" y="262" width="110" height="12" fill="rgba(255,255,255,.18)"/><path d="m258 262 6 6-6 6-6-6z" fill="#fff" stroke="none"/>
+              <rect x="190" y="296" width="70" height="9" fill="#fff" stroke="none"/>
+              <rect x="210" y="330" width="80" height="12" fill="rgba(255,255,255,.18)"/><path d="m298 330 6 6-6 6-6-6z" fill="#fff" stroke="none"/>
+              <rect x="250" y="364" width="96" height="12" fill="rgba(255,255,255,.18)"/>
+              <path d="M298 210v206" stroke="#fff" stroke-width="1.5"/><rect x="294" y="206" width="8" height="8" fill="#fff" stroke="none"/>
+              <text x="306" y="222" font-family="Geist Mono,monospace" font-size="9" fill="#fff" stroke="none">APR 30</text>
+            </svg>
+            <span class="cap">Fig. 02 - Season timeline</span></div>
+          <div class="icard">
+            <div class="tp"><span class="ib"><svg class="ico"><use href="#i-calc"/></svg></span><span>Firm type 02 / 04</span></div>
+            <h3>Tax &amp; CPA firms</h3>
+            <p class="d">Short on capacity at tax season. Letters signed early and documents chased for you.</p>
+            <ul><li><svg class="ico"><use href="#i-check"/></svg>Engagement letter renewals</li><li><svg class="ico"><use href="#i-check"/></svg>Document chasing for T1 and T2</li><li><svg class="ico"><use href="#i-check"/></svg>Morning "waiting on" list (WFI)</li><li><svg class="ico"><use href="#i-check"/></svg>Bill before you e-file</li></ul>
+            <div class="sb"><div><div class="v">41/52</div><div class="k">Letters signed by Jan 15<br>Example figure</div></div><svg viewBox="0 0 135 44" fill="none"><path d="M2 40h14l10-3 18-1 14-8 16-2 18-10 16-4 20-8" stroke="#1e4dff" stroke-width="1.5"/><rect x="123" y="1" width="6" height="6" fill="#1e4dff"/></svg></div>
+          </div>
+        </div>
+        <div class="pair">
+          <div class="fig dk"><span class="fn">(03)</span><i class="co"></i>
+            <svg class="art" viewBox="0 0 449 620" fill="none" stroke="rgba(255,255,255,.75)">
+              <text x="70" y="228" font-family="Geist Mono,monospace" font-size="9" fill="rgba(255,255,255,.6)" stroke="none">PROPOSAL #218 · MONTHLY BOOKS</text>
+              <path d="M70 240h310" stroke="rgba(255,255,255,.2)"/>
+              <g font-family="Geist Mono,monospace" font-size="9" fill="rgba(255,255,255,.75)" stroke="none" text-anchor="middle"><text x="96" y="284">09:12</text><text x="176" y="284">09:13</text><text x="256" y="284">+3 DAYS</text><text x="336" y="284">+5 DAYS</text></g>
+              <path d="M122 318h28M202 318h28M282 318h28" stroke="rgba(255,255,255,.35)"/>
+              <rect x="70" y="292" width="52" height="52" fill="#fff" stroke="none"/><path d="M84 308h24v18H84zM84 308l12 9 12-9" stroke="#1e4dff" stroke-width="1.5"/>
+              <rect x="150" y="292" width="52" height="52" fill="rgba(30,77,255,.9)" stroke="none"/><path d="M168 304h12l6 6v20h-18z" stroke="#fff" stroke-width="1.5"/>
+              <rect x="230" y="292" width="52" height="52"/><path d="M246 318a10 10 0 1 1 3 7M246 326v-6h6" stroke-width="1.5"/>
+              <rect x="310" y="292" width="52" height="52"/><path d="m326 318 6 6 12-13" stroke-width="1.5"/>
+              <g font-family="Geist Mono,monospace" font-size="9" fill="rgba(255,255,255,.75)" stroke="none" text-anchor="middle"><text x="96" y="364">INQUIRY</text><text x="176" y="364">PROPOSAL</text><text x="256" y="364">NUDGE</text><text x="336" y="364">SIGNED</text></g>
+              <path d="M70 396h310" stroke="rgba(255,255,255,.2)"/>
+              <g font-family="Geist Mono,monospace" font-size="9" fill="rgba(255,255,255,.6)" stroke="none"><text x="70" y="418">REPLY IN UNDER A MINUTE</text><text x="380" y="418" text-anchor="end">WORDING APPROVED</text></g>
+            </svg>
+            <span class="cap">Fig. 03 - Proposal track</span></div>
+          <div class="icard">
+            <div class="tp"><span class="ib"><svg class="ico"><use href="#i-book"/></svg></span><span>Firm type 03 / 04</span></div>
+            <h3>Bookkeepers</h3>
+            <p class="d">Short on clients, not skill. Every inquiry answered and every proposal followed up.</p>
+            <ul><li><svg class="ico"><use href="#i-check"/></svg>Reply to every new inquiry</li><li><svg class="ico"><use href="#i-check"/></svg>Proposal follow-up</li><li><svg class="ico"><use href="#i-check"/></svg>Monthly "still need" reminders</li><li><svg class="ico"><use href="#i-check"/></svg>Overdue fee follow-up</li></ul>
+            <div class="sb"><div><div class="v">5/8</div><div class="k">Proposals signed in March<br>Example figure</div></div><svg viewBox="0 0 135 44" fill="none"><path d="M2 40h20l14-10 22 0 18-12 22-2 18-12h14" stroke="#1e4dff" stroke-width="1.5"/><rect x="123" y="1" width="6" height="6" fill="#1e4dff"/></svg></div>
+          </div>
+        </div>
+        <div class="pair">
+          <div class="fig lt"><span class="fn">(04)</span><i class="co"></i>
+            <svg class="art" viewBox="0 0 449 620" fill="none" stroke="#111">
+              <circle cx="224" cy="320" r="150" stroke="#bbb"/><circle cx="224" cy="320" r="112" stroke="#999" stroke-dasharray="3 4"/><circle cx="224" cy="320" r="66" stroke="#999"/>
+              <path d="M224 160v14M224 466v14M64 320h14M370 320h14" stroke="#999"/>
+              <path d="M224 320 L330 239" stroke="#1e4dff" stroke-width="1.5"/><rect x="326" y="235" width="8" height="8" fill="#1e4dff" stroke="none"/>
+              <rect x="210" y="306" width="28" height="28" fill="#fff"/><rect x="217" y="313" width="14" height="14" fill="#1e4dff" stroke="none"/>
+              <rect x="285" y="360" width="6" height="6" fill="#111" stroke="none"/><rect x="168" y="388" width="6" height="6" fill="#111" stroke="none"/><rect x="150" y="262" width="6" height="6" fill="#111" stroke="none"/><rect x="262" y="414" width="6" height="6" fill="#c0392b" stroke="none"/>
+              <g font-family="Geist Mono,monospace" font-size="9" fill="#777" stroke="none"><text x="340" y="232">SEATS 52</text><text x="274" y="430">BILLED 48</text><text x="236" y="315">M365</text></g>
+            </svg>
+            <span class="cap">Fig. 04 - Seat orbits</span></div>
+          <div class="icard">
+            <div class="tp"><span class="ib"><svg class="ico"><use href="#i-server"/></svg></span><span>Firm type 04 / 04</span></div>
+            <h3>MSPs &amp; IT</h3>
+            <p class="d">Seats and licences drift every month. Mismatches caught before the invoice run.</p>
+            <ul><li><svg class="ico"><use href="#i-check"/></svg>Monthly billing reconciliation</li><li><svg class="ico"><use href="#i-check"/></svg>Quote and prospect follow-up</li><li><svg class="ico"><use href="#i-check"/></svg>QBR brief that ends in a proposal</li><li><svg class="ico"><use href="#i-check"/></svg>Fast reply to new inquiries</li></ul>
+            <div class="sb"><div><div class="v">$1,840</div><div class="k">A month in unbilled seats<br>Example figure</div></div><svg viewBox="0 0 135 44" fill="none"><path d="M2 40h12l16-4 16 1 18-9 16 2 20-16 16-6 12-4" stroke="#1e4dff" stroke-width="1.5"/><rect x="123" y="1" width="6" height="6" fill="#1e4dff"/></svg></div>
+          </div>
+        </div>
+        <div class="icta">
+          <span class="ib"><svg class="ico"><use href="#i-gridp"/></svg></span>
+          <div style="margin-top:auto"><h3>Don’t see<br>your firm?</h3>
+          <p>If your team chases clients for signatures, documents or payment, we can help.</p></div>
+          <a href="/book" class="btn wout"><span class="roll"><span><span>Talk to us</span><span>Talk to us</span></span></span></a>
+        </div>
+      </div>
+      <div class="hctl"><span class="c"><b id="hc">01</b> / 04</span><span class="t"><i id="hbar"></i></span><span class="k"><span class="kd">Keep scrolling</span><svg class="ico"><use href="#i-arr"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 STACK -->
+<section class="sec stack" id="stack" data-label="07 Stack">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>07</b><span>Stack</span></div><div class="meta">Works in your tools</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">Connects to your tools</h2>
+      <p class="rv">Your email, practice software, books and PSA, wired together. No new system to learn. Your firm owns every account.</p>
+    </div>
+    <div class="sgrid rv" id="sgrid">
+      <div class="layer">
+        <div class="hd"><span><i></i>Firm layer · live</span><span>Example</span></div>
+        <div class="lrows" id="lrows"></div>
+        <h4>Your tools, wired up</h4>
+        <div class="st3"><div><div class="v">1</div><div class="k">Person<br>approves</div></div><div><div class="v">100%</div><div class="k">Accounts in<br>your name</div></div><div><div class="v">0</div><div class="k">Public model<br>training</div></div></div>
+      </div>
+      <div class="tl2"><svg class="ico"><use href="#i-scale"/></svg><span class="ms">Synced</span><span class="nm">Clio<small>Practice</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-mail"/></svg><span class="ms">Synced</span><span class="nm">Outlook<small>Email</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-grid"/></svg><span class="ms">Synced</span><span class="nm">Microsoft 365<small>Suite</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-mail"/></svg><span class="ms">Synced</span><span class="nm">Gmail<small>Email</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-sign"/></svg><span class="ms">Synced</span><span class="nm">DocuSign<small>E-signature</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-chat"/></svg><span class="ms">Synced</span><span class="nm">Teams<small>Chat</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-book"/></svg><span class="ms">Synced</span><span class="nm">QuickBooks<small>Books</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-book"/></svg><span class="ms">Synced</span><span class="nm">Xero<small>Books</small></span></div>
+      <div class="tl2 ht"></div>
+      <div class="tl2"><svg class="ico"><use href="#i-folder"/></svg><span class="ms">Synced</span><span class="nm">TaxDome<small>Practice</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-layers"/></svg><span class="ms">Synced</span><span class="nm">Karbon<small>Practice</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-cal"/></svg><span class="ms">Synced</span><span class="nm">Calendly<small>Booking</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-ticket"/></svg><span class="ms">Synced</span><span class="nm">ConnectWise<small>PSA</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-ticket"/></svg><span class="ms">Synced</span><span class="nm">HaloPSA<small>PSA</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-ticket"/></svg><span class="ms">Synced</span><span class="nm">Autotask<small>PSA</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-folder"/></svg><span class="ms">Synced</span><span class="nm">SharePoint<small>Files</small></span></div>
+      <div class="tl2"><svg class="ico"><use href="#i-folder"/></svg><span class="ms">Synced</span><span class="nm">Google Drive<small>Files</small></span></div>
+      <div class="tl2 ht"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 WHY US -->
+<section class="sec why" id="why" data-label="08 Why us">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>08</b><span>Why us</span></div><div class="meta">Drag to compare</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">The usual way vs.<br>the BlueKite way</h2>
+      <p class="rv" style="padding-top:70px">Most automation projects drag on, cost more than quoted and leave you locked in. Drag the handle to see what we do differently.</p>
+    </div>
+    <div class="cmp rv" id="cmp">
+      <div class="side old">
+        <div class="hd"><svg class="ico sm"><use href="#i-x"/></svg>DIY tools &amp; typical agencies</div>
+        <div class="r"><span class="k"><svg class="ico"><use href="#i-receipt"/></svg>Price</span><span class="x"><svg class="ico"><use href="#i-x"/></svg></span><span class="t">Hourly, and it keeps growing</span></div>
+        <div class="r"><span class="k"><svg class="ico"><use href="#i-clock"/></svg>Speed</span><span class="x"><svg class="ico"><use href="#i-x"/></svg></span><span class="t">Months before anything works</span></div>
+        <div class="r"><span class="k"><svg class="ico"><use href="#i-user"/></svg>Clients</span><span class="x"><svg class="ico"><use href="#i-x"/></svg></span><span class="t">Bots email clients unchecked</span></div>
+        <div class="r"><span class="k"><svg class="ico"><use href="#i-key"/></svg>Ownership</span><span class="x"><svg class="ico"><use href="#i-x"/></svg></span><span class="t">The agency owns the accounts</span></div>
+        <div class="r"><span class="k"><svg class="ico"><use href="#i-lock"/></svg>Data</span><span class="x"><svg class="ico"><use href="#i-x"/></svg></span><span class="t">Client data feeds someone’s model</span></div>
+      </div>
+      <div class="side new">
+        <div class="hd"><svg class="ico sm"><use href="#i-check"/></svg>The BlueKite way</div>
+        <div class="r">Fixed price, agreed in writing<svg class="ico"><use href="#i-check"/></svg></div>
+        <div class="r">Live in 14 days, or refunded<svg class="ico"><use href="#i-check"/></svg></div>
+        <div class="r">A person approves what clients see<svg class="ico"><use href="#i-check"/></svg></div>
+        <div class="r">Your firm owns every account<svg class="ico"><use href="#i-check"/></svg></div>
+        <div class="r">AI sees only what a task needs<svg class="ico"><use href="#i-check"/></svg></div>
+      </div>
+      <div class="hdl" id="hdl"><span class="kn"><svg class="ico sm" viewBox="0 0 24 24"><path d="m9 7-5 5 5 5M15 7l5 5-5 5"/></svg></span><span class="lb">DRAG</span></div>
+    </div>
+    <div class="guar">
+      <div class="gq rv"><span class="ib"><svg class="ico"><use href="#i-lock"/></svg></span><div class="k">Guarantee 01</div><h4>Your data stays yours</h4><p>PIPEDA and CASL followed by default. The AI sees only what a task needs.</p>
+        <div class="lv"><div class="t">Level 1<span><i></i></span></div><div class="v">0</div><div class="l">Data used to train public models</div></div></div>
+      <div class="gq rv"><span class="ib"><svg class="ico"><use href="#i-userc"/></svg></span><div class="k">Guarantee 02</div><h4>A person stays in control</h4><p>Anything a client sees waits for someone at your firm to approve it.</p>
+        <div class="lv"><div class="t">Level 2<span><i></i><i></i></span></div><div class="v">1</div><div class="l">Person approves each send</div></div></div>
+      <div class="gq rv"><span class="ib"><svg class="ico"><use href="#i-key"/></svg></span><div class="k">Guarantee 03</div><h4>You own everything</h4><p>Every account and everything built is yours. It keeps running if you stop working with us.</p>
+        <div class="lv"><div class="t">Level 3<span><i></i><i></i><i></i></span></div><div class="v">100%</div><div class="l">Accounts in your firm’s name</div></div></div>
+      <div class="gq rv last"><span class="ib"><svg class="ico"><use href="#i-refresh"/></svg></span><div class="k">Guarantee 04</div><h4>Live fast, or refunded</h4><p>Fixed price in writing. Live within 14 days of approving the plan, or the fee is refunded.</p>
+        <div class="lv"><div class="t">Level 4<span><i></i><i></i><i></i><i></i></span></div><div class="v">14 days</div><div class="l">To live, or a full refund</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 QUESTIONS (reviews slot) -->
+<section class="sec qs" id="questions" data-label="09 Questions">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>09</b><span>Questions</span></div><div class="meta">Asked on most first calls</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">What firms ask first</h2>
+      <p class="rv">Before anyone trusts a new system with clients, they ask the same few things. Here are straight answers.</p>
+    </div>
+    <div class="qtop">
+      <div class="qd rv">
+        <div class="t"><span>First call</span><span><i></i><i></i><i></i></span></div>
+        <div class="bg">30<small>/min</small></div>
+        <div class="sub">Free · with the founder · no prep needed</div>
+        <div class="who"><img src="/rishabh.jpg" alt="Rishabh Verma" width="44" height="44" loading="lazy"><div><b>Rishabh Verma</b><span>Founder · Vancouver, BC</span></div></div>
+        <div class="cps"><span>PIPEDA</span><span>CASL</span><span>Canada first</span></div>
+      </div>
+      <div class="qw rv" id="qw">
+        <div class="t"><span class="qi">“</span><span class="ch"><svg class="ico"><use href="#i-spark"/></svg><span id="qtag">Asked by law firms</span></span></div>
+        <div class="body" id="qbody"><div class="qq" id="qq"></div><p class="aa" id="qa"></p></div>
+        <div class="ft">
+          <div class="au"><span class="av"><svg viewBox="2 -3 100 100"><use href="#kite"/></svg></span><div><b>BlueKite answer</b><span>Rishabh Verma · founder</span></div></div>
+          <div class="nv"><div class="bt"><button id="qprev" aria-label="Previous question"><svg class="ico sm"><use href="#i-arl"/></svg></button><button class="n" id="qnext" aria-label="Next question"><svg class="ico sm"><use href="#i-arr"/></svg></button></div><div class="ds" id="qdots"><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="qrow"><div class="tr" id="qrow"></div></div>
+</section>
+
+<!-- 10 PLANS (pricing slot) -->
+<section class="sec plans" id="plans" data-label="10 Plans">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>10</b><span>Plans</span></div><div class="meta">No surprises</div></div>
+    <div class="rule"></div>
+    <div class="shb">
+      <h2 class="h2 wb">Plans that start<br class="mb"> with a call</h2>
+      <p class="rv">A free call, a fixed-price build and optional care. Every price is agreed in writing before work starts.</p>
+    </div>
+    <div class="tgl rv"><div class="in" id="tgl" role="tablist" aria-label="Firm type"><button class="on" data-f="law" role="tab" aria-selected="true">Law</button><button data-f="acct" role="tab" aria-selected="false">Accounting</button><button data-f="msp" role="tab" aria-selected="false">MSP</button></div></div>
+    <div class="pcards">
+      <div class="pcd rv">
+        <div class="dg"><div class="hh"><span><i></i>1 call</span><span>30 min</span></div>
+          <svg viewBox="0 0 440 220" fill="none"><path d="M82 110h236" stroke="#bbb" stroke-dasharray="3 3"/><rect x="58" y="98" width="24" height="24" fill="#fff" stroke="#999"/><path d="M64 106h12M64 112h8" stroke="#999"/><rect x="196" y="86" width="48" height="48" fill="#1e4dff"/><rect x="211" y="101" width="18" height="18" fill="#fff"/><rect x="146" y="107" width="6" height="6" fill="#1e4dff"/><rect x="286" y="107" width="6" height="6" fill="#1e4dff"/><rect x="358" y="98" width="24" height="24" fill="#fff" stroke="#999"/><path d="m363 110 5 5 9-10" stroke="#1e4dff" stroke-width="1.5"/></svg></div>
+        <div class="bd">
+          <div class="nm"><span class="ib"><svg class="ico"><use href="#i-phone"/></svg></span><h3>Free plan</h3><span class="pl">Plan 01</span></div>
+          <p class="ds">A 30-minute call, then a written plan with three fixes for your firm.</p>
+          <div class="pv">Free</div><div class="pu">/ 30 minutes · no obligation</div>
+          <ul><li><svg class="ico"><use href="#i-check"/></svg>30-minute call with the founder</li><li><svg class="ico"><use href="#i-check"/></svg>Where work stalls in your firm</li><li><svg class="ico"><use href="#i-check"/></svg>Written plan with three fixes</li><li><svg class="ico"><use href="#i-check"/></svg>A fixed price for each fix</li><li><svg class="ico"><use href="#i-check"/></svg>Yours to keep, even if you stop there</li></ul>
+          <a href="/book" class="btn out"><span class="roll"><span><span>Book the free call</span><span>Book the free call</span></span></span></a>
+        </div>
+      </div>
+      <div class="pcd dk rv">
+        <div class="dg"><div class="hh"><span><i></i>Up to 3 fixes</span><span>14 days</span></div>
+          <svg viewBox="0 0 440 240" fill="none"><g stroke="rgba(255,255,255,.35)" stroke-dasharray="3 3"><path d="M74 54c70 0 70 66 122 66"/><path d="M74 120h122"/><path d="M74 186c70 0 70-66 122-66"/><path d="M244 120c52 0 52-66 122-66"/><path d="M244 120h122"/><path d="M244 120c52 0 52 66 122 66"/></g><g stroke="rgba(255,255,255,.4)" fill="#1a1a1a"><rect x="50" y="42" width="24" height="24"/><rect x="50" y="108" width="24" height="24"/><rect x="50" y="174" width="24" height="24"/><rect x="366" y="42" width="24" height="24"/><rect x="366" y="108" width="24" height="24"/><rect x="366" y="174" width="24" height="24"/></g><g stroke="rgba(255,255,255,.4)"><path d="M56 50h12M56 56h8M56 116h12M56 122h8M56 182h12M56 188h8"/></g><g stroke="#4d73ff" stroke-width="1.5"><path d="m371 54 5 5 9-10M371 120l5 5 9-10M371 186l5 5 9-10"/></g><rect x="196" y="96" width="48" height="48" fill="#1e4dff"/><rect x="211" y="111" width="18" height="18" fill="#fff"/><g fill="#1e4dff"><rect x="128" y="117" width="6" height="6"/><rect x="146" y="76" width="6" height="6"/><rect x="306" y="117" width="6" height="6"/><rect x="292" y="160" width="6" height="6"/><rect x="132" y="158" width="6" height="6"/></g></svg></div>
+        <div class="bd">
+          <div class="nm"><span class="ib"><svg class="ico"><use href="#i-hub"/></svg></span><h3>Build</h3><span class="pl">Fixed price</span></div>
+          <p class="ds">We build the fixes you pick, inside your own tools, with a person approving client messages.</p>
+          <div class="pv">Fixed</div><div class="pu">/ in writing · live in 14 days or refunded</div>
+          <ul id="bfeat"></ul>
+          <a href="/book" class="btn blue"><span class="roll"><span><span>Start with the call</span><span>Start with the call</span></span></span></a>
+        </div>
+      </div>
+      <div class="pcd rv">
+        <div class="dg"><div class="hh"><span><i></i>Ongoing</span><span>Monthly</span></div>
+          <svg viewBox="0 0 440 220" fill="none"><g stroke="#bbb" stroke-dasharray="3 3"><path d="M84 40h110M246 40h110"/><path d="M84 88c60 0 60 22 110 22M246 110c60 0 60-22 110-22"/><path d="M84 134c60 0 60-24 110-24M246 110c60 0 60 24 110 24"/><path d="M84 182c60 0 60-2 110-2M246 180h110"/><path d="M220 64v22M220 134v22"/></g><g fill="#fff" stroke="#999"><rect x="60" y="28" width="24" height="24"/><rect x="60" y="76" width="24" height="24"/><rect x="60" y="122" width="24" height="24"/><rect x="60" y="170" width="24" height="24"/><rect x="356" y="28" width="24" height="24"/><rect x="356" y="76" width="24" height="24"/><rect x="356" y="122" width="24" height="24"/><rect x="356" y="168" width="24" height="24"/></g><g stroke="#999"><path d="M66 36h12M66 42h8M66 84h12M66 90h8M66 130h12M66 136h8M66 178h12M66 184h8"/></g><g stroke="#1e4dff" stroke-width="1.5"><path d="m361 40 5 5 9-10M361 88l5 5 9-10M361 134l5 5 9-10M361 180l5 5 9-10"/></g><g fill="#1e4dff"><rect x="204" y="24" width="32" height="32"/><rect x="204" y="94" width="32" height="32"/><rect x="204" y="164" width="32" height="32"/></g><g fill="#fff"><rect x="214" y="34" width="12" height="12"/><rect x="214" y="104" width="12" height="12"/><rect x="214" y="174" width="12" height="12"/></g><g fill="#1e4dff"><rect x="136" y="37" width="6" height="6"/><rect x="298" y="37" width="6" height="6"/><rect x="140" y="98" width="6" height="6"/><rect x="290" y="121" width="6" height="6"/><rect x="150" y="178" width="6" height="6"/></g></svg></div>
+        <div class="bd">
+          <div class="nm"><span class="ib"><svg class="ico"><use href="#i-refresh"/></svg></span><h3>Care</h3><span class="pl">Plan 03</span></div>
+          <p class="ds">Optional monthly upkeep once you are live. Skip it and everything keeps running.</p>
+          <div class="pv">Optional</div><div class="pu">/ monthly · only if you want it</div>
+          <ul><li><svg class="ico"><use href="#i-check"/></svg>Fixes when your tools change</li><li><svg class="ico"><use href="#i-check"/></svg>Wording and rules tuned</li><li><svg class="ico"><use href="#i-check"/></svg>New fixes added over time</li><li><svg class="ico"><use href="#i-check"/></svg>A monthly check-in</li><li><svg class="ico"><use href="#i-check"/></svg>Stop any time, keep everything</li></ul>
+          <a href="/book" class="btn out"><span class="roll"><span><span>Ask about care</span><span>Ask about care</span></span></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="agstrip rv"><span class="ib"><svg class="ico"><use href="#i-brief"/></svg></span><p>Run a marketing agency?<span>We build these same systems white-label for your clients.</span></p><a href="/book">Talk to us <svg class="ico"><use href="#i-arr"/></svg></a></div>
+  </div>
+</section>
+
+<!-- 11 FAQ -->
+<section class="sec faq" id="faq" data-label="11 FAQ">
+  <div class="wrap">
+    <div class="sh rv"><div class="tag"><b>11</b><span>FAQ</span></div><div class="meta">6 questions</div></div>
+    <div class="rule"></div>
+    <div class="ctr"><h2 class="h2 wb">Questions, answered</h2><p class="rv">Everything you need to know before your first fix goes live.</p></div>
+    <div class="fql" id="fl">
+      <div class="fq rv"><button aria-expanded="false"><span class="n">(01)</span><span class="q">What happens on the free call?</span><span class="pl"></span></button><div class="a"><div><p>We spend 30 minutes on how work moves through your firm and where it stalls. Afterwards you get a written plan with three fixes, each with a fixed price. No prep needed and no obligation.</p></div></div></div>
+      <div class="fq rv"><button aria-expanded="false"><span class="n">(02)</span><span class="q">Why are there no prices on this page?</span><span class="pl"></span></button><div class="a"><div><p>Every firm’s tools and volume are different, so each fix is priced for you. The price is fixed and agreed in writing before any work starts. It does not grow by the hour.</p></div></div></div>
+      <div class="fq rv"><button aria-expanded="false"><span class="n">(03)</span><span class="q">Which tools do you work with?</span><span class="pl"></span></button><div class="a"><div><p>The ones you already use: Outlook, Gmail and Microsoft 365, Clio, QuickBooks Online, Xero, TaxDome, Karbon, DocuSign, ConnectWise, HaloPSA, Autotask and more. If we can’t work inside a tool, we’ll say so on the call.</p></div></div></div>
+      <div class="fq rv"><button aria-expanded="false"><span class="n">(04)</span><span class="q">How quickly will it be live?</span><span class="pl"></span></button><div class="a"><div><p>Within 14 days of you approving the written plan. If it isn’t live by then, the fee is refunded in full.</p></div></div></div>
+      <div class="fq rv"><button aria-expanded="false"><span class="n">(05)</span><span class="q">What if we stop working with you?</span><span class="pl"></span></button><div class="a"><div><p>Nothing breaks. Your firm owns every account and everything we built, and it keeps running. Monthly care is optional.</p></div></div></div>
+      <div class="fq rv"><button aria-expanded="false"><span class="n">(06)</span><span class="q">Is our client data safe?</span><span class="pl"></span></button><div class="a"><div><p>We follow Canadian privacy (PIPEDA) and anti-spam (CASL) rules by default. The AI sees only what a task needs, nothing trains public models, and a person approves anything a client sees.</p></div></div></div>
+    </div>
+    <div class="still rv"><img src="/rishabh.jpg" alt="Rishabh Verma" width="56" height="56" loading="lazy"><div class="tx"><b>Still have questions?</b><span>Talk to Rishabh Verma, founder<br>hello@bluekitetech.ca</span></div><a href="/book" class="btn dark"><span class="roll"><span><span>Book a 30-min call</span><span>Book a 30-min call</span></span></span></a></div>
+  </div>
+</section>
+
+<!-- 12 CONTACT -->
+<section class="sec blue contact" id="contact" data-label="12 Contact">
+  <div class="cbg" id="cbg"></div>
+  <div class="wrap cg">
+    <div>
+      <div class="tag rv"><b>12</b><span>Contact</span></div>
+      <h2 class="wb">Let’s make sure<br>nothing goes quiet.</h2>
+      <div class="csteps">
+        <div class="cst rv"><span class="ib"><svg class="ico"><use href="#i-chat"/></svg></span><p>Book a free 30-minute call</p><span>30 min</span></div>
+        <div class="cst rv"><span class="ib"><svg class="ico"><use href="#i-doc"/></svg></span><p>Get a written plan with three fixes</p><span>Written</span></div>
+        <div class="cst rv"><span class="ib"><svg class="ico"><use href="#i-bolt"/></svg></span><p>Go live inside your own tools</p><span>14 days</span></div>
+      </div>
+      <div class="cperson rv"><img src="/rishabh.jpg" alt="Rishabh Verma" width="48" height="48" loading="lazy"><div><b>Rishabh Verma</b><span>Founder · Vancouver, BC</span></div></div>
+      <div class="cbtns rv"><a href="mailto:hello@bluekitetech.ca"><svg class="ico"><use href="#i-mail"/></svg>hello@bluekitetech.ca</a><a href="/book"><svg class="ico"><use href="#i-cal"/></svg>Book a call</a></div>
+    </div>
+    <div class="rv">
+      <div class="chat" id="chat">
+        <div class="hd"><span class="lg"><svg viewBox="2 -3 100 100"><use href="#kitew"/></svg></span><div><b>BlueKite intake</b><span><i></i>Online · demo only</span></div><button id="crst" type="button"><svg class="ico"><use href="#i-refresh"/></svg>Restart</button></div>
+        <div class="ms" id="cms" aria-live="polite"></div>
+        <form id="cform" autocomplete="off"><input id="cin" type="text" placeholder="Type your name..." aria-label="Your reply" maxlength="40"><button type="submit" aria-label="Send"><svg class="ico"><use href="#i-send"/></svg></button></form>
+      </div>
+      <div class="cnote"><svg class="ico"><use href="#i-lock"/></svg>Demo flow · nothing is sent · booking is on the next page</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="sec dark foot" data-label="12 Contact">
+  <canvas class="rain" data-rain></canvas>
+  <div class="wrap">
+    <div class="ftop">
+      <div>
+        <a href="#top" class="logo"><span class="mk"><svg viewBox="2 -3 100 100"><use href="#kitew"/></svg></span>BlueKite</a>
+        <h2 class="wb">Automate the chasing.<br>Keep the clients.</h2>
+        <div class="fmail"><a class="in" href="mailto:hello@bluekitetech.ca"><svg class="ico"><use href="#i-mail"/></svg>hello@bluekitetech.ca</a><a href="/book" class="btn blue"><span class="roll"><span><span>Book a call</span><span>Book a call</span></span></span></a></div>
+        <div class="fcap">Free 30-minute call · written plan after · no obligation</div>
+      </div>
+      <div class="fcols">
+        <div><h6>Sitemap</h6><ul><li><a href="#solutions">Solutions</a></li><li><a href="#process">Process</a></li><li><a href="#estimate">Estimate</a></li><li><a href="#examples">Examples</a></li><li><a href="#plans">Plans</a></li></ul></div>
+        <div><h6>Firms</h6><ul><li><a href="#firms">Law firms</a></li><li><a href="#firms">Tax &amp; CPA</a></li><li><a href="#firms">Bookkeepers</a></li><li><a href="#firms">MSPs &amp; IT</a></li><li><a href="#plans">Agencies</a></li></ul></div>
+        <div><h6>Company</h6><ul><li><a href="/book">Book a call</a></li><li><a href="/privacy">Privacy</a></li><li><a href="#faq">FAQ</a></li><li><a href="mailto:hello@bluekitetech.ca">hello@bluekitetech.ca</a></li></ul></div>
+      </div>
+    </div>
+    <div class="fstat"><span><i></i>Vancouver, BC · Canada first, then the US</span><span>First call<b>30 min</b></span><span>Live in<b>14 days</b></span><span>Price<b>fixed, in writing</b></span><span>Local time<b id="fclock">09:00:00</b></span></div>
+    <div class="dm" id="dm"><canvas id="dmc"></canvas></div>
+    <div class="dmcap"><span>Live render · every blue square is a follow-up in flight</span><span>Move your cursor over the scene</span></div>
+    <div class="fbot"><span>© 2026 BlueKite · Vancouver, BC</span><span><a href="/privacy">Privacy</a> · <a href="/book">Book a call</a></span><a href="#top">Back to top ↑</a></div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

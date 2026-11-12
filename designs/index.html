@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BlueKite - Design concepts</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --ink:#0d1220; --muted:#5b6475; --faint:#8a93a5;
+  --line:#e4e7ec; --line2:#d3d8e0; --brand:#1E5EFF; --brand2:#4DA3FF; --brandsoft:#e9f0ff;
+  --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px -12px rgba(16,24,40,.18);
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0b0e14; --panel:#121722; --ink:#eef1f6; --muted:#a3acbd; --faint:#7a8396;
+    --line:#222a38; --line2:#2c3546; --brandsoft:#16244a;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0b0e14; --panel:#121722; --ink:#eef1f6; --muted:#a3acbd; --faint:#7a8396;
+  --line:#222a38; --line2:#2c3546; --brandsoft:#16244a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+button,select{font:inherit;color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;height:60px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:600;letter-spacing:-.01em;text-decoration:none}
+.brand svg{width:22px;height:22px}
+.brand small{font-weight:500;color:var(--faint);margin-left:6px}
+.tabs{display:flex;gap:4px;margin-left:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:3px}
+.tabs button{border:0;background:none;padding:6px 12px;border-radius:7px;cursor:pointer;color:var(--muted);font-weight:500;font-size:14px}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.hero{padding:44px 0 8px}
+.hero h1{font-size:34px;line-height:1.15;letter-spacing:-.025em;margin:0 0 10px;font-weight:650}
+.hero p{margin:0;color:var(--muted);max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:20px;padding:28px 0 64px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.thumb{position:relative;aspect-ratio:16/10;background:var(--line);overflow:hidden;display:block;border-bottom:1px solid var(--line)}
+.thumb img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .5s ease}
+.card:hover .thumb img{transform:scale(1.02)}
+.thumb .ph{position:absolute;inset:0;display:grid;place-items:center;color:var(--faint);font-size:13px}
+.body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.row{display:flex;align-items:center;gap:8px}
+.name{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.pill{font-size:12px;font-weight:500;padding:2px 8px;border-radius:999px;background:var(--brandsoft);color:var(--brand)}
+.pill.meh{background:var(--line);color:var(--muted)}
+.pill.cur{background:transparent;border:1px solid var(--line2);color:var(--muted)}
+.note{color:var(--muted);font-size:14px;margin:0}
+.src{font-size:13px;color:var(--faint)}
+.src a{color:var(--faint)}
+.actions{display:flex;gap:8px;margin-top:auto;padding-top:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:36px;padding:0 14px;border-radius:9px;border:1px solid var(--line2);background:var(--panel);text-decoration:none;font-weight:500;font-size:14px;cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--faint)}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.on{background:var(--brandsoft);border-color:var(--brand);color:var(--brand)}
+/* compare */
+#compare{display:none}
+body.comparing #gallery{display:none}
+body.comparing #compare{display:block}
+.cbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 0}
+.seg{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:3px}
+.seg button{border:0;background:none;padding:5px 11px;border-radius:7px;cursor:pointer;color:var(--muted);font-size:13px;font-weight:500}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+label.chk{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+.panes{display:grid;gap:14px;padding-bottom:24px}
+.pane{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0}
+.phead{display:flex;align-items:center;gap:8px;padding:8px 10px;border-bottom:1px solid var(--line)}
+.phead select{flex:1;min-width:0;height:32px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);padding:0 8px;font-size:14px;font-weight:500}
+.phead a{font-size:13px;color:var(--muted);text-decoration:none;white-space:nowrap}
+.phead a:hover{color:var(--ink)}
+.phead .x{border:0;background:none;cursor:pointer;color:var(--faint);font-size:18px;line-height:1;padding:0 4px}
+.viewport{position:relative;overflow:hidden;background:var(--bg)}
+.viewport iframe{position:absolute;top:0;left:0;border:0;transform-origin:0 0;background:#fff}
+.viewport.mobile{display:flex;justify-content:center}
+.viewport.mobile iframe{position:relative;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.hint{color:var(--faint);font-size:13px;padding:0 0 28px}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .hero h1{font-size:27px}
+  .grid{grid-template-columns:1fr}
+  .brand small{display:none}
+  .panes{grid-template-columns:1fr !important}
+  .cbar .seg.count{display:none}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/designs/">
+      <svg viewBox="2 -3 100 100" aria-hidden="true"><polygon points="50,6 24,38 50,94" fill="#1E5EFF"/><polygon points="54,0 80,32 54,80" fill="#4DA3FF"/></svg>
+      BlueKite <small>Design concepts</small>
+    </a>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-gallery" aria-selected="true">All concepts</button>
+      <button role="tab" id="tab-compare" aria-selected="false">Compare</button>
+    </div>
+  </div>
+</header>
+
+<main id="gallery">
+  <div class="wrap">
+    <section class="hero">
+      <h1>BlueKite in five templates</h1>
+      <p>Each page rebuilds a free Framer template with BlueKite's own copy, written for law firms, accounting and bookkeeping firms, and IT providers. Open one, or put two or three side by side.</p>
+    </section>
+    <div class="grid" id="cards"></div>
+  </div>
+</main>
+
+<main id="compare">
+  <div class="wrap">
+    <div class="cbar">
+      <div class="seg" id="vp">
+        <button data-v="desktop" aria-pressed="true">Desktop</button>
+        <button data-v="mobile" aria-pressed="false">Mobile</button>
+      </div>
+      <div class="seg count" id="count">
+        <button data-n="2" aria-pressed="true">2 up</button>
+        <button data-n="3" aria-pressed="false">3 up</button>
+      </div>
+      <label class="chk"><input type="checkbox" id="sync" checked> Scroll together</label>
+    </div>
+    <div class="panes" id="panes"></div>
+    <p class="hint">Scroll inside any page. With "Scroll together" on, the others follow to the same point on the page.</p>
+  </div>
+</main>
+
+<script>
+const designs = [
+  { slug: "kairoxx", name: "Kairox", src: "https://kairoxx.framer.website/", note: "Dark streak hero, thin grid lines, industries tabs.", tag: "Loved" },
+  { slug: "claura", name: "Claura", src: "https://claura.framer.ai/", note: "Calm, soft and airy, with product cards.", tag: "Loved" },
+  { slug: "automationpro", name: "AutomationPro", src: "https://automationpro.framer.website/", note: "Before-and-after task lists and step-by-step demos.", tag: "Best demos" },
+  { slug: "saasyio", name: "Saasyio", src: "https://saasyio.framer.ai/", note: "One simple app window that types and runs each workflow.", tag: "Loved" },
+  { slug: "vektor", name: "Vektor", src: "https://vektor-ai.framer.website/", note: "Long, dark, techy page with many sections.", tag: "Alright" },
+]
+const current = { slug: "current", name: "Current site", url: "/", note: "What bluekitetech.ca shows today.", tag: "Live now" }
+const all = [...designs, current]
+const urlOf = (d) => d.url || `/designs/${d.slug}/`
+const bySlug = Object.fromEntries(all.map((d) => [d.slug, d]))
+
+// ---------- gallery ----------
+const cards = document.getElementById("cards")
+for (const d of all) {
+  const el = document.createElement("article")
+  el.className = "card"
+  const tagClass = d.slug === "current" ? "cur" : d.tag === "Alright" ? "meh" : ""
+  el.innerHTML = `
+    <a class="thumb" href="${urlOf(d)}">
+      <span class="ph">${d.name}</span>
+      <img src="/designs/thumbs/${d.slug}.jpg" alt="" loading="lazy" onerror="this.remove()">
+    </a>
+    <div class="body">
+      <div class="row"><span class="name">${d.name}</span><span class="pill ${tagClass}">${d.tag}</span></div>
+      <p class="note">${d.note}</p>
+      ${d.src ? `<span class="src">Template: <a href="${d.src}" target="_blank" rel="noopener">${d.src.replace("https://", "").replace(/\/$/, "")}</a></span>` : `<span class="src">&nbsp;</span>`}
+      <div class="actions">
+        <a class="btn primary" href="${urlOf(d)}">Open page</a>
+        <button class="btn" data-pick="${d.slug}">Compare</button>
+      </div>
+    </div>`
+  cards.appendChild(el)
+}
+
+// ---------- state ----------
+const state = { view: "desktop", panes: ["kairoxx", "saasyio"], sync: true, compare: false }
+function readHash() {
+  const p = new URLSearchParams(location.hash.slice(1))
+  state.compare = p.has("compare")
+  const list = (p.get("compare") || "").split(",").filter((s) => bySlug[s])
+  if (list.length >= 2) state.panes = list.slice(0, 3)
+  if (p.get("view") === "mobile") state.view = "mobile"; else state.view = "desktop"
+}
+function writeHash() {
+  const h = state.compare ? `#compare=${state.panes.join(",")}&view=${state.view}` : ""
+  history.replaceState(null, "", location.pathname + h)
+}
+
+// ---------- compare ----------
+const panesEl = document.getElementById("panes")
+let frames = []
+function optionList(sel) {
+  return all.map((d) => `<option value="${d.slug}" ${d.slug === sel ? "selected" : ""}>${d.name}</option>`).join("")
+}
+function buildPanes() {
+  panesEl.innerHTML = ""
+  frames = []
+  panesEl.style.gridTemplateColumns = `repeat(${state.panes.length}, minmax(0,1fr))`
+  state.panes.forEach((slug, i) => {
+    const d = bySlug[slug]
+    const pane = document.createElement("section")
+    pane.className = "pane"
+    pane.innerHTML = `
+      <div class="phead">
+        <select aria-label="Page ${i + 1}">${optionList(slug)}</select>
+        <a href="${urlOf(d)}" target="_blank" rel="noopener">Open ↗</a>
+        ${state.panes.length > 2 ? `<button class="x" aria-label="Remove">×</button>` : ""}
+      </div>
+      <div class="viewport ${state.view}"><iframe title="${d.name}" src="${urlOf(d)}" loading="lazy"></iframe></div>`
+    pane.querySelector("select").addEventListener("change", (e) => { state.panes[i] = e.target.value; writeHash(); buildPanes() })
+    pane.querySelector(".x")?.addEventListener("click", () => { state.panes.splice(i, 1); writeHash(); syncControls(); buildPanes() })
+    panesEl.appendChild(pane)
+    const iframe = pane.querySelector("iframe")
+    frames.push(iframe)
+    iframe.addEventListener("load", () => hookScroll(iframe))
+  })
+  layout()
+}
+function layout() {
+  const h = Math.max(420, window.innerHeight - 200)
+  for (const f of frames) {
+    const vp = f.parentElement
+    vp.style.height = h + "px"
+    if (state.view === "mobile") {
+      f.style.transform = "none"; f.style.width = "390px"; f.style.height = h + "px"
+    } else {
+      const w = vp.clientWidth
+      const base = 1440
+      const s = w / base
+      f.style.width = base + "px"; f.style.height = h / s + "px"; f.style.transform = `scale(${s})`
+    }
+  }
+}
+let syncing = false
+function hookScroll(iframe) {
+  let win
+  try { win = iframe.contentWindow; win.document } catch { return }
+  win.addEventListener("scroll", () => {
+    if (!state.sync || syncing) return
+    const doc = win.document.documentElement
+    const frac = win.scrollY / Math.max(1, doc.scrollHeight - win.innerHeight)
+    syncing = true
+    for (const f of frames) {
+      if (f === iframe) continue
+      try {
+        const w2 = f.contentWindow, d2 = w2.document.documentElement
+        w2.scrollTo({ top: frac * (d2.scrollHeight - w2.innerHeight), behavior: "instant" })
+      } catch {}
+    }
+    requestAnimationFrame(() => requestAnimationFrame(() => (syncing = false)))
+  }, { passive: true })
+}
+function syncControls() {
+  document.querySelectorAll("#vp button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === state.view)))
+  document.querySelectorAll("#count button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.n === state.panes.length)))
+  document.getElementById("tab-gallery").setAttribute("aria-selected", String(!state.compare))
+  document.getElementById("tab-compare").setAttribute("aria-selected", String(state.compare))
+  document.body.classList.toggle("comparing", state.compare)
+}
+function showCompare(on) {
+  state.compare = on
+  writeHash(); syncControls()
+  if (on) buildPanes(); else { panesEl.innerHTML = ""; frames = [] }
+  window.scrollTo(0, 0)
+}
+
+document.getElementById("tab-gallery").onclick = () => showCompare(false)
+document.getElementById("tab-compare").onclick = () => showCompare(true)
+document.querySelectorAll("#vp button").forEach((b) => (b.onclick = () => { state.view = b.dataset.v; writeHash(); syncControls(); buildPanes() }))
+document.querySelectorAll("#count button").forEach((b) => (b.onclick = () => {
+  const n = +b.dataset.n
+  while (state.panes.length < n) state.panes.push(designs.map((d) => d.slug).find((s) => !state.panes.includes(s)))
+  state.panes = state.panes.slice(0, n)
+  writeHash(); syncControls(); buildPanes()
+}))
+document.getElementById("sync").onchange = (e) => (state.sync = e.target.checked)
+cards.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-pick]")
+  if (!b) return
+  const s = b.dataset.pick
+  state.panes = [s, ...state.panes.filter((x) => x !== s)].slice(0, Math.max(2, state.panes.length))
+  showCompare(true)
+})
+let rt
+window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(layout, 80) })
+window.addEventListener("hashchange", () => { readHash(); syncControls(); if (state.compare) buildPanes() })
+
+readHash(); syncControls(); if (state.compare) buildPanes()
+</script>
+</body>
+</html>
